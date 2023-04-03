@@ -9,9 +9,9 @@ function show()
             Wait(0)
             if showHelp then
                 if helpTimer > GetGameTimer() then
-                    showHelpText("Navigate with ~y~W,A,S,D~s~ and confirm with ~y~SPACE~s~ for the left code block.")
+                    showHelpText("Utilisez ~y~W,A,S,D~s~ et confirmez avec ~y~SPACE~s~ pour le bloc de gauche.")
                 elseif helpTimer > GetGameTimer()-helpCycle then
-                    showHelpText("Use the ~y~Arrow Keys~s~ and ~y~ENTER~s~ for the right code block")
+                    showHelpText("Utilisez les ~y~Arrow Keys~s~ et ~y~ENTER~s~ pour le bloc de gauche.")
                 else
                     helpTimer = GetGameTimer()+helpCycle
                 end
